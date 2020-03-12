@@ -16,7 +16,7 @@ $white: #F5F7FA;
 .typeBtn{
   margin-top: 2em;
   padding: 1em 2em;
-  position: absolute;
+
   letter-spacing: 2px;
   @include hover_ui(350ms, #FACD36, #0F181F);
   border: 1px solid  transparent;

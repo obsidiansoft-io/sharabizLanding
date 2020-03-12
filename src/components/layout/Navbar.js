@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
 
      <header>
-                <nav>
+                <div className="nav">
                 <img src={Logo} alt="sharabiz" />
                 <div className="label">
                     <p>Share it your way</p>
@@ -19,7 +19,7 @@ const Navbar = () => {
                     
                     </Link>
                 </div>
-            </nav>
+            </div>
             <div className="navMenu">
                 <ul>
 

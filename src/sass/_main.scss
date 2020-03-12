@@ -79,43 +79,125 @@ header {
 }
 
 
-.secctionArea{
+.secctionArea {
   height         : 100vh;
-justify-content:space-around;
+  justify-content: space-around;
   display        : flex;
-flex-direction: column;
+  flex-direction : column;
 
 }
-.titlesLabels{
+
+.titlesLabels {
 
   text-align: center;
-  h2{
+
+  h2 {
     font-size: 2em;
-    color: $black;
+    color    : $black;
   }
-  p{
-    color         : rgba(0, 0, 0, 0.55);
-    font-size: 2em;
+
+  p {
+    color      : rgba(0, 0, 0, 0.55);
+    font-size  : 2em;
     font-weight: 300;
   }
+
   @media (max-width: 767px) {
     margin-top: 1em;
 
-}
-}
-
-.elemtSection{
-  background: $white;
-  width: 100%;
-  overflow: hidden;
-  height: 500px;
-  h2{
-font-size: 2em;
   }
+}
 
-        /* Landscape phone to portrait tablet */
+.elementWhoIt {
+  background     : $black;
+  width          : 100%;
+  overflow       : hidden;
+  height         : 700px;
+  align-items    : center;
+  justify-content: center;
+  display        : flex;
+  color          : #fff;
+
+  .contInfo {
+    display        : flex;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+
+    }
+
+    div {
+      display        : flex;
+      align-items    : flex-start;
+      justify-content: center;
+      flex-direction : column;
+
+      @media (max-width: 767px) {
+
+        align-items: center;
+      }
+
+      &:first-child {
+        width: 34vw;
+
         @media (max-width: 767px) {
 
-
+          width: 89vw;
         }
+
+        h3 {
+          margin-bottom: 1em;
+          font-size    : 2em;
+
+          @media (max-width: 767px) {
+            margin-bottom: 1em;
+            font-size    : 1.39em;
+            text-align   : center;
+            line-height  : normal;
+
+          }
+        }
+
+        p {
+          font-weight   : 300;
+          font-size     : 21px;
+          padding-bottom: 13px;
+          letter-spacing: 0.5px;
+          line-height   : normal;
+
+          span {
+            font-weight: 600;
+            color      : $primary;
+          }
+
+          @media (max-width: 767px) {
+            & {
+              text-align: justify;
+              font-size : 18px;
+            }
+
+          }
+        }
+      }
+
+
+    }
+  }
+
+  img {
+    width: 400px;
+
+    @media (max-width: 767px) {
+      width : auto;
+      height: 233px;
+    }
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 767px) {}
 }

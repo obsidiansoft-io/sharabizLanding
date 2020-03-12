@@ -1,15 +1,35 @@
 import React from 'react';
 
+
+
+import Phone from '../../../img/phone.png';
 const WhoIsIt = () => {
     return (
-        <div className="elemtSection">
-            <h2>
-                WHO… is it for?
-          </h2>
+        <div className="elementWhoIt">
 
-            <h3>You are an individual and want to spread the word about…</h3>
-            <div>
+            <div className="contInfo">
 
+                <div>
+                    <h3>You are an individual and want to spread the word about…</h3>
+                    <p>
+                        A simple and effective way to share something (video or image or text) about you, your business or a specific product or service.
+</p>
+                    <p>
+                        From the convenience of your phone, you create your own <span>“bizcards”</span>
+(= presentation page), from predefined templates that you share with your contacts or friends.
+
+</p>
+                    <a class="typeBtn">
+                        FREE DOWNLOAD SHARA BIZ APP
+      </a>
+                </div>
+
+
+                <div>
+                    <img src={Phone} />
+
+
+                </div>
             </div>
         </div >
     );
