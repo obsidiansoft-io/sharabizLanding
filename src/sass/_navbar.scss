@@ -1,9 +1,8 @@
 nav {
-  position       : fixed;
+
   width          : 100%;
   overflow       : hidden;
-  background     : #fff;
-  box-shadow     : 0 0px 5px rgba(15, 23, 31, 0.5);
+  background     : $black;
   z-index        : 6;
   height         : 71px;
   display        : flex;
@@ -14,19 +13,34 @@ nav {
     height: 100%;
   }
 
+  .label {
+    font-weight   : 600;
+    font-size     : 1em;
+    text-transform: capitalize;
+    color         : #fff;
+  }
+
   .areaInfoNav {
     width: calc(100% - 74px);
   }
 
+  .divToLogin {
+    margin-right: 1em;
+    color       : #fff;
+  }
+
   a {
+    margin-left   : 1em;
     letter-spacing: 1px;
 
     @include hover_ui(350ms, transparent, #0f181f);
     text-decoration: none;
-    border-bottom  : 3px solid #facd36;
+    border-bottom  : 3px solid $primary;
+    color          : #fff !important;
 
     &:hover {
-      border-bottom: 3px solid #0f181f;
+      color        : $primary !important;
+      border-bottom: 3px solid #fff;
     }
   }
 

@@ -1,0 +1,66 @@
+.cardCollctionContainer {
+
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+    @media (max-width: 767px) {
+        height: 100%;
+
+    }
+
+    .cardStyles {
+        position : relative;
+        width    : 233px;
+        height   : 300px;
+        overflow : hidden;
+        word-wrap: normal;
+
+
+        /* Landscape phone to portrait tablet */
+        @media (max-width: 767px) {
+            width : 180px;
+            height: 212px;
+
+        }
+
+        @include hover_ui(350ms, $white, $black);
+
+        &:hover {
+            @include hover_ui(350ms, transparent, $black);
+
+        }
+
+        .dateCard {
+            position: absolute;
+            top     : 69%;
+            left    : 8%;
+            right   : 13%;
+
+            p {
+                font-weight   : 700;
+                text-transform: uppercase;
+                font-size     : 1.4em;
+                color         : rgba(0, 0, 0, 0.13);
+                margin-bottom : 0.2em;
+            }
+
+            h3 {
+                font-size  : 1em;
+                font-weight: 500;
+                line-height: 114%;
+                color      : $black;
+            }
+
+            /* Landscape phone to portrait tablet */
+            @media (max-width: 767px) {
+                top: 55%;
+
+                h3 {
+                    font-size  : 0.9em;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
