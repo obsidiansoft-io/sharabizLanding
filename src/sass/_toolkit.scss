@@ -1,0 +1,31 @@
+
+
+
+
+@mixin hover_ui($time, $bcolor, $fcolor) {
+  transition-property: all;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition-duration: $time;
+  background: $bcolor;
+  color: $fcolor;
+}
+
+//BTN
+.typeBtn{
+  margin-top: 2em;
+  padding: 1em 2em;
+  position: absolute;
+  letter-spacing: 2px;
+  @include hover_ui(350ms, #FACD36, #0F181F);
+  border: 1px solid  transparent;
+  cursor: pointer;
+  &:hover{
+    @include hover_ui(350ms, transparent, #FACD36);
+    border: 1px solid  #FACD36;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 11px;
+  }
+}
+
