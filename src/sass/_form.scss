@@ -1,4 +1,13 @@
 form {
+    input[type="name"],
+    input[type="email"],
+    input[type="phone"]{
+        border    : 0;
+        outline   : 0;
+        background-color: #339923;
+    }
+    
+
 
     input[type="submit"] {
         background: $primary;
