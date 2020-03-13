@@ -9,11 +9,13 @@ const Navbar = () => {
 
     useEffect(() => {
     let im = window.location.pathname;
-        setWhereIm(im);
+    setWhereIm(im);
+
     });
     
     return (
-     <header>
+
+<header>
                 <div className="nav" id="navbar">
                 <img src={Logo} alt="sharabiz" />
                 <div className="label">

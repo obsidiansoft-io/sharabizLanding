@@ -19,9 +19,7 @@ const WhoIsIt = () => {
 (presentation page), from predefined templates that you share with your contacts or friends.
 
 </p>
-                    <a className="typeBtn">
-                        DOWNLOAD SHARA BIZ
-      </a>
+      
                 </div>
 
 

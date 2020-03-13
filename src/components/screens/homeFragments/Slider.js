@@ -4,7 +4,7 @@ import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
 
 import SliderA from '../../../img/bgWM.jpg';
-import SliderB from '../../../img/A.jpg';
+import SliderB from '../../../img/a.jpg';
 import SliderC from '../../../img/B.jpg';
 import SliderD from '../../../img/C.jpg';
 const AutoplaySlider = withAutoplay(AwesomeSlider);

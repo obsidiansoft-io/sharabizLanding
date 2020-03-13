@@ -2,9 +2,6 @@ import React from 'react';
 
 import Navbar from '../layout/Navbar';
 
-import NextTO from '../../img/nextTo.svg';
-
-
 
 const Integration = () => {
 

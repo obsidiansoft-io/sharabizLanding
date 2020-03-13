@@ -1,0 +1,168 @@
+.priceShow section {
+    padding        : 4em 0 4em 0;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+
+    .tableBox {
+        display        : flex;
+        justify-content: space-around;
+        align-items    : center;
+        width          : 100%;
+        overflow       : hidden;
+        flex-wrap      : wrap;
+    }
+
+}
+
+
+.princesTable,
+.princesTablePremium {
+    .forTitle {
+        width: fit-content;
+    }
+
+    h3 {
+        font-size     : calc(.34vw + 16px);
+        color         : $black;
+        letter-spacing: .025em;
+        line-height   : 1.55556;
+        text-transform: uppercase;
+
+        margin-bottom: .5em;
+
+        font-weight: 400;
+
+        letter-spacing: 1px;
+
+        border-bottom: 3px solid $primary;
+
+    }
+
+}
+
+.princesTable {
+    background: $white;
+    width     : 27vw;
+    height    : 600px;
+
+    @media (max-width: 767px) {
+
+        height: auto;
+    }
+
+}
+
+
+.premiumBlock {
+    position  : absolute;
+    width     : 100%;
+    background: #fff;
+
+    @media (max-width: 767px) {
+
+        height: auto;
+    }
+}
+
+.princesTablePremium {
+
+    background: $white;
+    width     : 34vw;
+    height    : 377px;
+}
+
+
+.bannerNeed {
+    background-color: rgba(245, 247, 250, 0.21);
+
+    width  : 89vw;
+    margin : auto;
+    height : 233px;
+    width  : 80vw;
+    padding: 2em;
+    display: flex;
+
+    @media (max-width: 767px) {
+        margin  : auto;
+        height  : 260px;
+        width   : 86vw;
+        padding : 1em;
+        display : flex;
+        overflow: hidden;
+
+
+    }
+
+    .izQ {
+
+        width          : 50%;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-self     : center;
+
+        div {
+            width: 80%;
+        }
+
+        .title {
+            width: fit-content;
+        }
+    }
+
+
+    .deR {
+
+        width     : 50%;
+        text-align: center;
+
+        @media (max-width: 767px) {
+            right   : 0;
+            border  : 0;
+            position: absolute;
+        }
+
+        img {
+            transform: translateY(-80px);
+            width    : auto;
+
+            @media (max-width: 767px) {
+                width    : 100%;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) {
+
+        .izQ {
+            width: 64%;
+
+        }
+
+    }
+
+    h3 {
+        font-size     : calc(.34vw + 16px);
+        color         : $black;
+        letter-spacing: .025em;
+        line-height   : 1.55556;
+        text-transform: uppercase;
+        margin-bottom : .5em;
+        font-weight   : 400;
+        letter-spacing: 1px;
+        border-bottom : 3px solid $primary;
+
+    }
+
+    p {
+        font-size     : calc(.34vw + 16px);
+        color         : $black;
+        letter-spacing: .025em;
+        line-height   : 1.55556;
+        font-weight   : 300;
+    }
+}
