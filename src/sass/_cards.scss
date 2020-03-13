@@ -1,9 +1,9 @@
 .cardCollctionContainer {
-
     display        : flex;
     align-items    : center;
     justify-content: space-around;
     flex-wrap      : wrap;
+
     @media (max-width: 767px) {
         height: 100%;
 
@@ -11,30 +11,39 @@
 
     .cardStyles {
         position : relative;
-        width    : 233px;
-        height   : 300px;
         overflow : hidden;
         word-wrap: normal;
-
+        width    : 450px;
+        height   : 300px;
+        margin   : 1em;
 
         /* Landscape phone to portrait tablet */
         @media (max-width: 767px) {
             width : 180px;
             height: 212px;
-
+            margin: 0;
         }
 
         @include hover_ui(350ms, $white, $black);
 
         &:hover {
-            @include hover_ui(350ms, transparent, $black);
+            @include hover_ui(350ms, $black, #fff);
 
+            .dateCard {
+                p {
+                    color: $primary;
+                }
+
+                h3 {
+                    color: #fff;
+                }
+            }
         }
 
         .dateCard {
             position: absolute;
-            top     : 69%;
-            left    : 8%;
+            top     : 44%;
+            left    : 5%;
             right   : 13%;
 
             p {
@@ -46,7 +55,7 @@
             }
 
             h3 {
-                font-size  : 1em;
+                font-size  : 2em;
                 font-weight: 500;
                 line-height: 114%;
                 color      : $black;

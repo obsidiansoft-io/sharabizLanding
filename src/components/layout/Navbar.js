@@ -1,16 +1,23 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 
 import Logo from '../../img/shra.svg';
 
 const Navbar = () => {
-    return (
+    const [whereIm, setWhereIm] = useState();
 
+
+    useEffect(() => {
+    let im = window.location.pathname;
+        setWhereIm(im);
+    });
+    
+    return (
      <header>
-                <div className="nav">
+                <div className="nav" id="navbar">
                 <img src={Logo} alt="sharabiz" />
                 <div className="label">
-                    <p>Share it your way</p>
+                
                 </div>
                 <div className="divToLogin">
                     <Link>
@@ -20,30 +27,30 @@ const Navbar = () => {
                     </Link>
                 </div>
             </div>
-            <div className="navMenu">
+            <div className="navMenu" id="menuMain">
                 <ul>
 
                     <li>
-                    <Link to={'/'}>
+                    <Link to={'/'} className={ whereIm === '/' ? 'amHere' : null}>
                     Home
-                    
+    
                     </Link>
                     </li>
                     <li>
-                         <Link to={'/api-integration'}>
+                         <Link to={'/api-integration'} className={ whereIm === '/api-integration' ? 'amHere' : null}>
                          API Integration
                     
                     </Link>
                     </li>
                     <li>
                     
-                    <Link to={'/pricing'}>
+                    <Link to={'/pricing'} className={ whereIm === '/pricing' ? 'amHere' : null}>
                     Pricing
                     </Link>
                     </li>
                     <li>
                            
-                    <Link to={'/contact'}>
+                    <Link to={'/contact'} className={ whereIm === '/contact' ? 'amHere' : null}>
                     Contact US
                     </Link>
                    

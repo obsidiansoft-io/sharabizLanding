@@ -17,7 +17,13 @@ $white: #F5F7FA;
   margin-top: 2em;
   padding: 1em 2em;
 
-  letter-spacing: 2px;
+
+
+       /* Landscape phone to portrait tablet */
+       @media (max-width: 767px) {
+        margin-top: 0.5em;
+
+    }
   @include hover_ui(350ms, #FACD36, #0F181F);
   border: 1px solid  transparent;
   cursor: pointer;

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Navbar from '../layout/Navbar';
+import Footer from '../layout/Footer';
 ///fragments+
 import Slider from './homeFragments/Slider';
 import WhoIsIt from './homeFragments/WhoIsIt';
@@ -14,6 +15,9 @@ const Home = () => {
         </div>
            <WhoIsIt/>
            <HowItWorks/>
+
+
+           <Footer/>
         </div>
     );
 }

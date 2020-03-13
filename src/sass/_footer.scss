@@ -1,0 +1,17 @@
+footer {
+    height    : 200px;
+    background: rgb(14, 24, 35);
+    background: linear-gradient(0deg, rgba(14, 24, 35, 1) 0%, rgba(40, 49, 59, 1) 100%);
+    clip-path : polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+    ;
+    overflow: hidden;
+    color   : #fff;
+    width   : 100%;
+    position: absolute;
+
+    .singleDown {
+        right   : 5%;
+        position: absolute;
+        bottom  : 10%;
+    }
+}

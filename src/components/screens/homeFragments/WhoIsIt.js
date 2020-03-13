@@ -16,11 +16,11 @@ const WhoIsIt = () => {
 </p>
                     <p>
                         From the convenience of your phone, you create your own <span>“bizcards”</span>
-(= presentation page), from predefined templates that you share with your contacts or friends.
+(presentation page), from predefined templates that you share with your contacts or friends.
 
 </p>
-                    <a class="typeBtn">
-                        FREE DOWNLOAD SHARA BIZ APP
+                    <a className="typeBtn">
+                        DOWNLOAD SHARA BIZ
       </a>
                 </div>
 
