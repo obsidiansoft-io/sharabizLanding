@@ -20,11 +20,21 @@
 
 .awssld__wrapper {
     height: 767px !important;
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+    height: 100vh !important;
+ }
 }
 .awssld{
     --loader-bar-color: #FDCF37!important;
 }
 // .sliderBox {}
+
+
+.awssld__content > img{
+    height: 100%;
+}
 
 .areaLabel {
     z-index  : 3;
@@ -37,12 +47,17 @@
         top        : 55%;
         right      : 34%;
         line-height: normal;
-        font-size  : 2em;
-        text-shadow: 2px 2px 2px #000;
-
+        font-size     : calc(2vw + 21px);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.55);
+span{
+    color: $primary;
+}
+@media (min-width: 1400px) { 
+    top        : 55%;
+    right      : 40%;
+ }
         @media (max-width: 767px) {
             bottom     : 10%;
-          
             font-size  : 34px;
             top        : auto;
             left       : 2%;

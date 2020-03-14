@@ -39,6 +39,12 @@ header {
     ul {
       display: inline;
 
+      @media (max-width: 767px) {
+        display        : flex;
+        width          : 100%;
+        justify-content: space-between;
+      }
+
       li {
         float          : left;
         list-style-type: none;
@@ -218,13 +224,14 @@ header {
 //contact
 
 .areaContact {
-  display: flex;
-  height : 89vh;
-  background-color:   rgba(245, 247, 250, 0.21) ;
+  display         : flex;
+  height          : 89vh;
+  background-color: rgba(245, 247, 250, 0.21);
+
   @media (max-width: 767px) {
-  
+
     flex-direction: column;
-   
+
   }
 }
 
@@ -249,22 +256,21 @@ header {
   flex-direction  : column;
   padding-left    : 2em;
 
-  justify-content : center;
+  justify-content: center;
+
   @media (max-width: 767px) {
-    width: 91%;
-    justify-self: start;
-    padding: 1em;
+    width        : 91%;
+    justify-self : start;
+    padding      : 1em;
     padding-right: 1em;
   }
 
   h3 {
-
     font-size  : 3em;
     font-weight: 400;
 
     &::before {
-      position: absolute;
-      content : '-';
+      content: '-';
 
     }
 

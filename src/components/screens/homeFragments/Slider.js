@@ -16,7 +16,9 @@ const Slider = () => {
             interval={6000}
         >
             <div className="areaLabel" data-src={SliderA} >
-                <p>Create your own digital bizcards in a minute or two and start sharing immediately.
+                <p>Create your own digital <span>
+                bizcards
+                </span> in a minute or two and start sharing immediately.
 </p>
             </div>
             <div className="areaLabel" data-src={SliderB} >
@@ -25,13 +27,18 @@ const Slider = () => {
 </p>
             </div>
             <div className="areaLabel" data-src={SliderC} >
-                <p> Sell directly from your bizcards
+                <p> Sell directly from your <br />
+                <span>
+                bizcards
+                </span> 
 
 
 </p>
             </div>
             <div className="areaLabel" data-src={SliderD} >
-                <p> Sell directly from your bizcards
+                <p> Sell directly from your <span>
+                bizcards
+                </span>
                 Check stats and track how effective your bizcards are.
 
 

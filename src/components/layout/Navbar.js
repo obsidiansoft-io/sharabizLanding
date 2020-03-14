@@ -11,7 +11,7 @@ const Navbar = () => {
     let im = window.location.pathname;
     setWhereIm(im);
 
-    });
+    },[]);
     
     return (
 

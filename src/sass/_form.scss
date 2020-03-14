@@ -61,9 +61,7 @@ form {
     display       : flex;
     flex-direction: column;
     width         : 80%;
-
     height: 8vh;
-
     @media (max-width: 767px) {
         padding-left: 0;
         width       : 100%;

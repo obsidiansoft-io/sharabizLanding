@@ -24,7 +24,7 @@ const WhoIsIt = () => {
 
 
                 <div>
-                    <img src={Phone} />
+                    <img src={Phone} alt="to Who"/>
 
 
                 </div>

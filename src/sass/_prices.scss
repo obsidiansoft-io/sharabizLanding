@@ -7,20 +7,30 @@
 
     .tableBox {
         display        : flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items    : center;
-        width          : 100%;
+        width          : 89%;
         overflow       : hidden;
         flex-wrap      : wrap;
-    }
 
+        @media (max-width: 767px) {
+            width: 95%;
+        }
+    }
 }
 
 
 .princesTable,
 .princesTablePremium {
+
     .forTitle {
-        width: fit-content;
+        width   : fit-content;
+        padding : 2em;
+        position: absolute;
+
+        @media (max-width: 767px) {
+            padding: 1em;
+        }
     }
 
     h3 {
@@ -29,15 +39,10 @@
         letter-spacing: .025em;
         line-height   : 1.55556;
         text-transform: uppercase;
-
-        margin-bottom: .5em;
-
-        font-weight: 400;
-
+        margin-bottom : .5em;
+        font-weight   : 400;
         letter-spacing: 1px;
-
-        border-bottom: 3px solid $primary;
-
+        border-bottom : 3px solid $primary;
     }
 
 }
@@ -45,43 +50,86 @@
 .princesTable {
     background: $white;
     width     : 27vw;
-    height    : 600px;
+    height    : 300px;
 
     @media (max-width: 767px) {
 
-        height: auto;
+        width        : 100%;
+        margin-bottom: 2em;
+        height       : 188px;
     }
 
 }
 
 
 .premiumBlock {
-    position  : absolute;
+    position  : relative;
     width     : 100%;
     background: #fff;
 
     @media (max-width: 767px) {
-
         height: auto;
     }
 }
 
 .princesTablePremium {
-
     background: $white;
-    width     : 34vw;
+    width     : 100%;
     height    : 377px;
 }
 
 
+.noForNow {
+    height         : 100%;
+    display        : flex;
+    align-items    : center;
+    flex-direction : column;
+    justify-content: center;
+    width          : 60%;
+    margin         : auto;
+    text-align     : center;
+
+    @media (max-width: 767px) {
+        width          : 89%;
+        height         : 70%;
+        justify-content: flex-end;
+    }
+
+    a {
+        position: relative;
+    }
+
+    .label {
+        font-size     : calc(.34vw + 16px);
+        color         : $black;
+        letter-spacing: .025em;
+        line-height   : 1.55556;
+        text-transform: uppercase;
+        margin-bottom : .5em;
+        font-weight   : 400;
+        letter-spacing: 1px;
+
+    }
+
+    .smallContext {
+        font-size     : calc(.34vw + 13px);
+        color         : $black;
+        letter-spacing: .025em;
+        line-height   : 1.55556;
+        font-weight   : 300;
+    }
+}
+
 .bannerNeed {
+
+    padding-top: calc(3vh + 21px);
+
     background-color: rgba(245, 247, 250, 0.21);
 
-    width  : 89vw;
-    margin : auto;
-    height : 233px;
-    width  : 80vw;
-    padding: 2em;
+    margin: auto;
+    height: 233px;
+    width : 89%;
+
     display: flex;
 
     @media (max-width: 767px) {
@@ -91,20 +139,21 @@
         padding : 1em;
         display : flex;
         overflow: hidden;
-
-
     }
 
     .izQ {
-
         width          : 50%;
         display        : flex;
-        flex-direction : column;
         justify-content: center;
         align-self     : center;
 
+        @media (max-width: 767px) {
+
+            justify-content: start;
+        }
+
         div {
-            width: 80%;
+            width: 74%;
         }
 
         .title {
@@ -164,5 +213,83 @@
         letter-spacing: .025em;
         line-height   : 1.55556;
         font-weight   : 300;
+    }
+}
+
+.politics {
+    background     : $black;
+    width          : 100%;
+    height         : auto;
+    padding        : 2em 0;
+    align-items    : center;
+    justify-content: space-around;
+    position       : absolute;
+    display        : flex;
+    flex-direction : row;
+
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) {
+
+        flex-direction: column;
+    }
+
+    .callUs {
+        .sendmail {
+            a {
+                cursor    : pointer;
+                color     : #fff;
+                transition: all 350ms ease-in-out;
+
+                &:hover {
+                    color     : $primary;
+                    transition: all 350ms ease-in-out;
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            width        : 100%;
+            text-align   : center;
+            margin-bottom: 3vh;
+        }
+
+        h4 {
+            color    : #fff;
+            font-size: calc(.34vw + 16px);
+        }
+
+        h5 {
+            font-weight: 300;
+            padding    : 0.3em 0;
+            color      : $primary;
+            font-size  : calc(.34vw + 16px);
+        }
+    }
+
+    .textP {
+        width: 50%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    p {
+        &::before {
+            content: '-';
+            color  : $primary;
+        }
+
+        padding-left  : 1em;
+        font-size     : calc(.21vw + 13px);
+        color         : $white;
+        letter-spacing: .025em;
+        line-height   : normal;
+        font-weight   : 300;
+        margin-bottom : 0.5em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
